@@ -9,7 +9,17 @@ helm install [RELEASE_NAME] prometheus-community/prometheus
 helm uninstall [RELEASE_NAME]
 
 ```
-
+# GAfana
+```
+helm repo add grafana https://grafana.github.io/helm-charts
+helm repo update
+```
+```
+helm install my-release grafana/grafana
+```
+```
+helm delete my-release
+```
 
 
 
