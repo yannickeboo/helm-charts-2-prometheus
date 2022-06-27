@@ -1,3 +1,18 @@
+Use only this. It has both prometheus and grafana
+```
+ helm list
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+
+
+
+
+helm install sage prometheus-community/kube-prometheus-stack -n prometheus
+
+ helm uninstall sage -n prometheus
+```
+
+
+
 ```
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo add stable https://charts.helm.sh/stable
